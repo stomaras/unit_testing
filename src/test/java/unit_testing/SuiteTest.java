@@ -8,6 +8,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 // the SuiteClasses annotation nhelp us to run at the same time many classes 
 @Suite.@SuiteClasses({MyMathTest.class,MyMathTest_ReverseNumber_Parameterized.class})
-public class SuitTest {
-
+public class MyFirstSuitTest {
+//this class remain empty .
+//Is used only as holder of the above annotations 
 }
