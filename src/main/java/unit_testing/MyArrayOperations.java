@@ -4,6 +4,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+/**
+* MyArrayOperations contains the gradesFrequencies method, which returns the frequencies of
+* a given array, using the readFile method of MyFileUtilities class
+* @author  tomaras spyros 
+* @since   2018-04-17 
+*/
 
 public class MyArrayOperations {
 		// i make a default constructor
