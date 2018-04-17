@@ -1,4 +1,4 @@
-package unit_testingg;
+package unit_testing;
 
 public class MyMath {
 	
