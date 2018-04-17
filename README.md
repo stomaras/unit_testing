@@ -26,7 +26,7 @@ this class has one method getGradeFrequencies method which return an array with 
 
 I testing this class with MyArrayOperationsTest.java which with the help of mock doing the test
 
-At the end I also have create the SuiteTest.java which help us run 2 classes at the same time 
+At the end I also have create the MyFirstSuiteTest.java which help us run 2 classes at the same time 
 
                            
                            
