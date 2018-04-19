@@ -23,25 +23,35 @@ public class MyMathTest_ReverseNumber_Parameterized {
 	private int val;
 	MyMath cal;
 	
-	// i add the before annotation which run before every method 
+	/**i add the before annotation which run before every method 
+	*  is called 
+	*/
+	
 	@Before
 	public void setup(){
 		cal = new MyMath();
 	}
 	
-	// the constructor 
+	// the constructor and the initialization 
 	public MyMathTest_ReverseNumber_Parameterized(int expectedResult, int val){
 		this.val = val;
 		this.expectedResult = expectedResult;
 		
 	}
 	
-	// i add the parameters annotation 
+	/** i add the parameters annotation 
+	*  in order to check some specific 
+	*  prices for all special cases 
+	*/
 	@Parameters
 	public static Collection<Object[]> testData(){
 		Object[][] data = new Object[][]{{1,-1},{0,0},{-2,2}};
 		return Arrays.asList(data);
 	}
+	/**
+	* with this test method i test if the expected result
+	*is equal with the actual result 
+	*/
 	@Test
 	public void testAdd(){
 		// i put in assertEquals the expectedresult and actual result 
