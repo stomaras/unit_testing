@@ -5,7 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+*@author tomaras spyros
+*@since 19/04/2018
+*this class help us to read a txt file and handle the exceptions 
+*at the end i return an integer array with the grades if the grades.txt is not empty
+*/
 
 public class MyFileUtilities {
 		// i make a default constructor
