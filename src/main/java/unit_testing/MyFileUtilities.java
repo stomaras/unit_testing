@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
 *@author tomaras spyros
 *@since 19/04/2018
@@ -17,7 +18,13 @@ public class MyFileUtilities {
 	
 		public MyFileUtilities(){}
 		
-		// i read a txt file and handle the exceptions
+		/**
+		*  i read a txt file and handle the exception
+		*  i create an integer array grades array with seize as the size of list Lines 
+		*  and at the end i return this array 
+		*  also i convert the string with the help of valueOf method at integer 
+		*  at the end i return the grades array 
+		*/
 		public int[] readFile(String filepath) throws FileNotFoundException {
 			BufferedReader br = new BufferedReader(new FileReader(filepath));
 			List<String> lines = new ArrayList<String>();
