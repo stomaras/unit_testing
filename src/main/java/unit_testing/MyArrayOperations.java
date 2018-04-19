@@ -14,6 +14,13 @@ import java.util.List;
 public class MyArrayOperations {
 		// i make a default constructor
 		MyArrayOperations(){}
+		/** this method get a filepath with txt grades 
+		*   read the filepath with the help of readFile method which i implement in FileUtilities class and put
+		*  the grades in an integer array with name grades 
+		*  and count the frequency of grades in the txt
+		*  put the frequency in an integer array and return this array 
+		*  with name frequencies 
+		*/
 		public static int[] getGradeFrequencies(String filepath) throws FileNotFoundException{
 			MyFileUtilities utils = new MyFileUtilities();
 			int[] grades = utils.readFile(filepath);
