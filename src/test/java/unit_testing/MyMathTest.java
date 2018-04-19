@@ -8,6 +8,15 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.Test;
 
+/**
+* @author tomaras spyros
+* @since 19/04/2018
+* I testing the MyMath class
+* I test the normal case at the division between two numbers 
+* I test the extreme case in which the denominator is zero 
+* I throw an IllegalArgumentException at this case
+*/
+
 public class MyMathTest {
 
 			
