@@ -1,5 +1,10 @@
 package unit_testing;
-
+/**
+*@author tomaras spyros
+*@since 19/04/2018
+* this class help us to return the reverse number 
+*Also help us to return the division between two numbers
+*/
 public class MyMath {
 	
 		// i make a default constructor 
