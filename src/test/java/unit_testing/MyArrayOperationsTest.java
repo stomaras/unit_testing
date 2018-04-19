@@ -7,7 +7,13 @@ import org.junit.Test;
 import static org.mockito.Mockito.*;
 
 import java.io.FileNotFoundException;
-
+/**
+*  @author tomaras spyros
+*  @since 19/04/2018
+*  at this class i use mock 
+*  in order to be sure that that it was done in FileUtilities 
+*  the results will be this 
+*/
 public class MyArrayOperationsTest {
 	// report of MyArrayOperations class
 	MyArrayOperations myarrayoperation;
