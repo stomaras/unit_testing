@@ -1,19 +1,24 @@
 package unit_testing;
-
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
+
+/**
+* @author tomaras spyros
+* @since 19/04/2018
+* I do testing for the MyFileUtilities class
+* with the help from the @Rule annotation 
+* i check also the case which the txt file is empty 
+*/
 
 public class MyFileUtilitiesTest {
 			MyFileUtilities my = new MyFileUtilities();
@@ -30,7 +35,5 @@ public class MyFileUtilitiesTest {
 				thrown.expect(FileNotFoundException.class);
 				my.readFile("fsadfsadfadf");
 				
-			}
-			
-			
+			}		
 }
