@@ -23,8 +23,11 @@ import org.junit.rules.TemporaryFolder;
 public class MyFileUtilitiesTest {
 			MyFileUtilities my = new MyFileUtilities();
 			
-			// i create a rule annotation in order to handle the Exception 
-			// first it is empty
+			/**
+			*  i create a rule annotation in order to handle the FileNotFoundException 
+			*
+			*/
+			
 			@Rule
 			public ExpectedException thrown= ExpectedException.none();
 			
