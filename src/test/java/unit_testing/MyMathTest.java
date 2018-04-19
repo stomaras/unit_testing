@@ -23,7 +23,10 @@ public class MyMathTest {
 			 // i create my object
 			 MyMath my = new MyMath();
 			
-			// test for normal case 
+			/**
+			* here i do a test for normal case 
+			* when the two numbers are positive 
+			*/
 			@Test
 			public void checkDivide() {
 				assertEquals("Divide", 2.5, my.divide(5, 2), 0.00001);
@@ -33,7 +36,10 @@ public class MyMathTest {
 			@Rule
 			public ExpectedException thrown = ExpectedException.none();
 			
-			// i make a test in order to check the normal case  
+			/**
+			*  i make a test in order to check the extreme case  
+			*  when the denom is zero then i handle the IllegalArgumentException 
+			*/
 			@Test
 			public void checkDivide2()  {
 				thrown.expect(IllegalArgumentException.class);
