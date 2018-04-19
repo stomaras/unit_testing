@@ -9,7 +9,14 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.runner.RunWith;
-// the runwith annotation help us to run the parameterized class with the MyMath_ReverseNumber_Parameterized
+/**
+* @author tomaras spyros
+* @since  19/04/2018
+* the runwith annotation help us to run the parameterized class with the MyMath_ReverseNumber_Parameterized class
+*  i add the @parameters annotation which help us to run the test 
+*  for specific cases
+*/
+ 
 @RunWith(Parameterized.class)
 public class MyMathTest_ReverseNumber_Parameterized {
 	private int expectedResult;
