@@ -12,7 +12,11 @@ public class MyMath {
 			
 		}
 		
-		//i implement the method which return the reverse number 
+		/**
+		* i implement the method which return the reverse number 
+		*  in the example i implement this for all cases 
+		*  when the number is positive when the number is negative and when the number is zero 
+		*/
 		public int reverseNumber(int number)
 		{
 			if(number < 0){
@@ -26,7 +30,10 @@ public class MyMath {
 			return number;	
 		}
 		
-		// i implement  the method which return the division of num and denom 
+		/**
+		* i implement  the method which return the division of num and denom
+		*  i check the case when the number denom is zero and throw an IllegalArgumentException 
+		*/ 
 		public  double divide(int num, int denom){
 				if(denom ==0){
 					throw new IllegalArgumentException("cannot divide by 0");
