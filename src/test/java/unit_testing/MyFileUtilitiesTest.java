@@ -1,17 +1,13 @@
-package unit_testing;
-import static org.junit.Assert.*;
-import org.junit.Test;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
-import org.junit.rules.TemporaryFolder;
 
+package unit_testingg;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
 /**
 * @author tomaras spyros
 * @since 19/04/2018
@@ -19,24 +15,32 @@ import org.junit.rules.TemporaryFolder;
 * with the help from the @Rule annotation 
 * i check also the case which the txt file is empty 
 */
-
 public class MyFileUtilitiesTest {
+	
 			MyFileUtilities my = new MyFileUtilities();
 			
-			/**
-			*  i create a rule annotation in order to handle the FileNotFoundException 
-			*
-			*/
-			
+			// i create a rule annotation in order to handle the Exception 
+			// first it is empty
 			@Rule
 			public ExpectedException thrown= ExpectedException.none();
+			
+			@Rule 
+			public ExpectedException exist = ExpectedException.none();
 			
 		
 			// i create a Test annotation in order to test if i read normal the file if not throw a FileNotFoundException
 			@Test
-			public void readFileTest1() throws FileNotFoundException{
-				thrown.expect(FileNotFoundException.class);
+			public void readFileTest1() {
+				thrown.expect(IllegalArgumentException.class);
+				thrown.expectMessage("Grades not found");
 				my.readFile("fsadfsadfadf");
 				
-			}		
-}
+			}
+			
+			@Test
+			public void readFileTest2(){
+				my.readFile("src\\test\\resources\\grades.txt");
+				assertArrayEquals(new int[]{12,11,10,15,17,20},new int[]{12,11,10,15,17,20});
+			}
+
+		}
