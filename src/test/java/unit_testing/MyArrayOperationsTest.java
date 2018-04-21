@@ -24,10 +24,10 @@ public class MyArrayOperationsTest {
 		
 		//i do mock the MyFileUtilities class which is used in MyArrayOperations
 		MyFileUtilities utils = mock(MyFileUtilities.class);
-		int a[] = {12,13,9,13,17,12,13};
+		int a[] = {12,11,10,15,17,20};
 		when(utils.readFile("grades.txt")).thenReturn(a);
 		// I place the items I expect
-		Assert.assertArrayEquals(new int[]{0,0,0,0,0,0,0,0,0,1,0,0,2,3,0,0,0,1,0,0,0},
+		Assert.assertArrayEquals(new int[]{0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,1},
 				myarrayoperation.getGradeFrequencies("grades.txt"));
 	}
 
