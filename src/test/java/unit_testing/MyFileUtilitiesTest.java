@@ -36,11 +36,17 @@ public class MyFileUtilitiesTest {
 				my.readFile("fsadfsadfadf");
 				
 			}
-			
+			// i test the normal case 
 			@Test
 			public void readFileTest2(){
 				my.readFile("src\\test\\resources\\grades.txt");
 				assertArrayEquals(new int[]{12,11,10,15,17,20},new int[]{12,11,10,15,17,20});
+			}
+			// i test the case which grades.txt is empty 
+			@Test
+			public void readFileTest3(){
+				thrown.expect(IllegalArgumentException.class);
+				my.readFile("");
 			}
 
 		}
