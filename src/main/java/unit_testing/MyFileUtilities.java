@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/*@author tomaras spyros
- *@since 21/04/2018
- *this class read with right way a file 
+/* @author tomaras spyros
+ * @since 21/04/2018
+ * this class read with right way a file 
  * and returns an integer array with the grades 
  *
 
